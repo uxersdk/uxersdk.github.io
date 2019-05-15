@@ -1,0 +1,19 @@
+.BackVideo {
+    position: absolute;
+    height: 100%;
+}
+
+video {
+   object-fit: fill;
+		-webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+}
+
+#video-cover {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1), rgba(0,0,0,1));
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+}

@@ -1,0 +1,174 @@
+.App {
+	
+}
+
+.Section {
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+
+.Section#cover {
+	height: 550px;
+	background-image: url(/images/wall.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.Section#intro {
+	overflow: visible;
+	padding-top: 60px;
+	padding-bottom: 130px;
+}
+
+.Section#skills {
+	margin-top: -60px;
+	padding-bottom: 100px;
+}
+
+.Section#projects > .Container {
+	margin-top: 50px !important;
+}
+
+.Container {
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.Container[position="center"] {
+	text-align: center;
+}
+
+.Container[position="paragraph"] {
+	margin: 120px 250px 60px 250px;
+}
+
+#projects > .Container {
+	margin-bottom: 0px;
+}
+
+.Shadow {
+	position: absolute;
+	top: 0px; left: 0; right: 0;
+	height: 30px;
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05), rgba(0,0,0,0.25));
+	margin-top: -30px;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0.6;
+}
+
+.video-react.video-react-fluid {
+	padding-top: 0 !important;
+	height: 300px;
+	position: absolute;
+}
+
+#Universe {
+	background-color: #333333;
+	height: 100%;
+	width: 100%;
+}
+
+#contact-info {
+	position: relative;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:1281px) { 
+	/* hi-res laptops and desktops */ 
+	
+}
+
+@media (max-width:1025px) { 
+	/* big landscape tablets, laptops, and desktops */
+	.Section:not(#cover) > .Container {
+		margin: 120px 100px 60px 100px;
+	}
+}
+
+@media (max-width:961px)  { 
+	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	#intro > .Container > .Image#me {
+		position: relative;
+		right: -25px;
+		bottom: -250px;
+		top: auto;
+		margin: 0 auto;
+		position: absolute;
+	}
+	.App > .Section#intro > .Container {
+		min-height: 500px;
+	}
+	.ImageRow#skills-row {
+		margin: 50px 0px 10px !important;
+	}
+	#skills-row > .ImageRowItem > .Image {
+		width: 400px !important;
+	}
+	.Section#ux > .Container > .ImageRow > .ImageRowItem > .Image {
+		width: 200px !important;
+		padding: 0px;
+	}
+	.Section#projects > .CardRow > .CardRowItem > .Card > .card-cover {
+		padding: 15px 20px;
+	}
+}
+
+@media (max-width:641px)  { 
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	::-webkit-scrollbar { 
+    display: none; 
+	}
+	.Section:not(#cover) > .Container {
+		margin: 80px 50px 60px 50px;
+	}
+	#intro > .MenuBar {
+		top: 3px;
+		margin: 0px 1.5px;
+	}
+	.MenuBar > .MenuBarItem {
+		margin: 0px 1.5px;
+		max-width: none;
+		background-color: var(--primary-color);
+	}
+	.Section#ux > .Container > .ImageRow > .ImageRowItem > .Image {
+		width: 170px !important;
+	}
+	.Section#projects > .CardRow > .CardRowItem {
+		text-align: center;
+    flex-grow: 1;
+    height: 250px;
+    width: 50%;
+    padding: 0px;
+    overflow: hidden;
+	}
+	.Section#projects > .CardRow > .CardRowItem > .Card > .card-back > .Image {
+		border-radius: 0px !important;
+	}
+	.Section#projects > .CardRow > .CardRowItem > .Card > .card-back {
+		padding: 0px;
+	}
+}
+
+@media (max-width:481px)  { 
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+	
+}
+
+@media (max-width:320px)  {
+	/* smartphones, iPhone, portrait 480x320 phones */ 
+	
+}

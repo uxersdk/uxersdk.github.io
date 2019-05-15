@@ -1,0 +1,92 @@
+.Card {
+	height: 100%;
+	position: relative;
+	user-select: none;
+}
+
+#me {
+	position: absolute;
+	right: -80px;
+	top: -70px;
+}
+
+.CardRow {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	margin: 0px auto;
+	width: 1000px;
+}
+
+.CardRowItem {
+	text-align: center;
+	flex-grow: 1;
+	height: 250px;
+	width: 250px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.CardRowItem:hover .card-cover {
+	opacity: 1.0;
+}
+
+.CardRowItem:hover .card-back {
+	filter: brightness(20%);
+}
+
+.card-back {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+
+.card-cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+	color: white;
+	padding: 15px 25px;
+}
+
+.card-title {
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	transition: all 0.5s ease;
+	font-family: NoirBold;
+	text-transform: uppercase;
+}
+
+.CardRowItem:hover .card-title {
+	padding-top: 0px;
+}
+
+.card-info {
+	text-align: left;
+	font-size: 12px;
+	font-family: NoirLight;
+}
+
+
+@media only screen and (max-width: 1025px) {
+	/* big landscape tablets, laptops, and desktops */
+  .CardRow {
+    width: 700px;
+  }
+}
+
+@media (max-width:641px)  {
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .CardRow {
+    width: 100%;
+		margin: 0px;
+  }
+}

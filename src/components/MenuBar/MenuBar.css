@@ -1,0 +1,35 @@
+.MenuBar {
+	text-align: center;
+	height: 40px;
+	position: absolute;
+	top: 25px; left: 0; right: 0;
+	margin: 0 auto;
+	z-index: 2;
+	display: flex;
+	align-content: flex-start;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.MenuBarItem {
+	border-bottom: 5px solid var(--primary-color);
+	transition: all .2s ease;
+	flex-grow: 1;
+	text-align: center;
+	font-family: NoirBold;
+	text-transform: uppercase;
+	font-size: 12px;
+	cursor: pointer;
+	max-width: 100px;
+	margin: 0 20px;
+}
+
+.MenuBarItem:hover {
+	border-bottom: 40px solid var(--primary-color);
+	color: black;
+}
+
+.MenuBar > a {
+	text-decoration: none;
+	color: black;
+}

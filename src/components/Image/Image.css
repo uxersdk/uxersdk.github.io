@@ -1,0 +1,33 @@
+.Image {
+	
+}
+
+#me {
+	position: absolute;
+	right: -80px;
+	top: -70px;
+}
+
+.ImageRow {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.ImageRowItem {
+	text-align: center;
+	margin: 0 auto;
+	flex-grow: 1;
+}
+
+.ImageRowItemDescription {
+	margin: 20px auto 50px auto;
+	text-align: center;
+	font-family: Songti;
+	font-size: 14px;
+}
+
+.ImageRowItem > .Image {
+	display: block;
+	margin: 0 auto;
+}

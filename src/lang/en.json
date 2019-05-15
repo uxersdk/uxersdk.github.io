@@ -1,0 +1,29 @@
+{
+	"en": {
+		"cover": {
+			"signature": "Kasper Jørgensen",
+			"cover-text": "UX designer & developer"
+		},
+		"intro": {
+			"title": "My name is Kasper",
+			"text1": "I am a danish UX designer, with a bachelor's degree in Interaction Design and I have always had the passion for creating great user experiences.",
+			"text2": "My motivation is the current lack of user insights and involvement, at today's companies, that often leads to misunderstandings and frustrated users."
+		},
+		"skills": {
+			"title": "Skills",
+			"text1": "My biggest strength is that I am like a swiss army knife when it comes to UX. I have a lot of experince in developing prototypes, designing wireframes, creating studies, analysing systems, articulating text... The list goes on and on."
+		},
+		"ux": {
+			"title": "Why UX?",
+			"text1": "UX is not just about cool graphics and modern front-end design. It's about fully understanding your users and their needs, so that you are able to provide them with a satisfying experience. Equally important, you need a mutual understanding across the whole developer team, as misunderstandings often leads to bad user experiences."
+		},
+		"projects": {
+			"title": "projects",
+			"text1": "I have been working on a lot of exiting projects as a UX Designer. Some of them are from my time as a student at the university, and some of them are for huge companies, such as Nilfisk. They all gave me a lot of experience."
+		},
+		"contact": {
+			"title": "Contact",
+			"text1": "I am always looking for new and exiting challenges, so if you are developing a product or service, and you want satisfied users, don’t hessitate to contact me."
+		}
+	}
+}
